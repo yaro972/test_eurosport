@@ -1,6 +1,14 @@
 import {Image, StyleSheet, Text, TouchableOpacity} from "react-native";
 import React from "react";
 
+/**
+ * Affiche un joueur
+ * @param key son Id
+ * @param nom {String} Son nom
+ * @param photo {String} sa photo
+ * @param onClick {Function} Action lors du click
+ * @constructor
+ */
 const Joueur = ({key, nom, photo, onClick}) => {
     return (
         <TouchableOpacity

@@ -9,3 +9,8 @@ Une page permet de détailler leurs informations.
 * expo 
 * react-native 
 * jest 
+
+## TODO
+* Ajout de react navigation
+* Style
+* Page détaillée.
