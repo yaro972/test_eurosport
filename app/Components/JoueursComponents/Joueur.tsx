@@ -1,11 +1,13 @@
 import {Image, StyleSheet, Text, TouchableOpacity} from "react-native";
 import React from "react";
 
-const Joueur = ({key, nom, photo}) => {
+const Joueur = ({key, nom, photo, onClick}) => {
     return (
         <TouchableOpacity
             style={styles.JoueurContainer}
             key={key}
+            OnClick={(el) => {onClick(el)}}
+
         >
             <Image source={{uri: photo}}
                    style={styles.imageContainer}
