@@ -1,14 +1,25 @@
-import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import AppContainer from "./app/Navigation/navigation";
-import Joueur from "./app/Components/JoueursComponents/Joueur";
+import React, {useEffect, useState} from 'react';
+import {StyleSheet,  View} from 'react-native';
+import ListeJoueur from "./app/Components/JoueursComponents/ListeJoueur";
+import {getJoueurs} from "./app/API";
 
 export default function App() {
+    const [joueurs, setJoueurs] = useState([]);
 
+    useEffect(() => {
+         getJoueurs().then((j) => {
+             setJoueurs(j);
+         });
+        return function cleanup() {
+
+        }
+    }, [joueurs]);
 
     return (
         <View style={styles.container}>
-            <Joueur/>
+            <ListeJoueur
+                liste={joueurs}
+            />
         </View>
     )
 }

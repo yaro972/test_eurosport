@@ -1,20 +1,35 @@
-import React from 'react';
-import {ScrollView, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
-import ListeJoueur from './ListeJoueurs';
+import {Image, StyleSheet, Text, TouchableOpacity} from "react-native";
+import React from "react";
 
-const Joueur = () => {
+const Joueur = ({key, nom, photo}) => {
     return (
-        <ScrollView style={styles.container}>
-            <ListeJoueur/>
-        </ScrollView>
+        <TouchableOpacity
+            style={styles.JoueurContainer}
+            key={key}
+        >
+            <Image source={{uri: photo}}
+                   style={styles.imageContainer}
+            />
+            <Text
+                style={styles.textContainer}
+            > {nom}</Text>
+        </TouchableOpacity>
     )
 };
 
 const styles = StyleSheet.create({
-    container: {
+    JoueurContainer: {
+        flex: 1
+    },
+    imageContainer: {
         flex: 1,
-        display: "flex"
+        height: 100,
+        width: 100
+    },
+    textContainer: {
+        flex: 2,
+        color: "#000"
     }
 });
 
-export default Joueur;
+export default Joueur

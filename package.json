@@ -6,9 +6,11 @@
     "androidTunnel": "expo start --android --tunnel",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest"
   },
   "dependencies": {
+    "@types/jest": "^24.0.18",
     "expo": "^34.0.1",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
@@ -17,13 +19,19 @@
     "react-native-reanimated": "~1.1.0",
     "react-native-web": "^0.11.4",
     "react-navigation": "^4.0.4",
-    "react-navigation-stack": "latest"
+    "react-navigation-stack": "latest",
+    "ts-jest": "^24.1.0"
   },
   "devDependencies": {
     "@types/react": "^16.8.23",
     "@types/react-native": "^0.57.65",
     "babel-preset-expo": "^6.0.0",
+    "jest": "^24.9.0",
     "typescript": "^3.4.5"
   },
-  "private": true
+  "private": true,
+  "ApiUrl": "https://eurosportdigital.github.io/eurosport-react-native-developer-recruitment/docs/headtohead.json",
+  "jest": {
+    "preset": "react-native"
+  }
 }

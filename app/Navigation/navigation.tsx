@@ -1,16 +1,16 @@
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
-import Joueur from "../Components/JoueursComponents/Joueur";
+import ListeJoueur from "../Components/JoueursComponents/ListeJoueur";
 
 const AppContainer = createAppContainer(
     createStackNavigator({
             Joueur: {
-                screen: Joueur
+                screen: ListeJoueur
             },
         },
         {
-            initialRouteName: 'Joueur',
+            initialRouteName: 'ListeJoueur',
         }
     )
 );
