@@ -20,6 +20,7 @@ export default function App() {
         <View style={styles.container}>
             <ListeJoueur
                 liste={joueurs}
+                key={joueurs.lastname}
                 onClick={() => {
                     onClick
                 }}

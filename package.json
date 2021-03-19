@@ -10,24 +10,24 @@
     "test": "jest"
   },
   "dependencies": {
-    "@types/jest": "^24.0.18",
-    "expo": "^34.0.1",
-    "react": "16.8.3",
-    "react-dom": "^16.8.6",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",
-    "react-native-gesture-handler": "~1.3.0",
-    "react-native-reanimated": "~1.1.0",
-    "react-native-web": "^0.11.4",
+    "@types/jest": "26.0.21",
+    "expo": "^40.0.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
+    "react-native-gesture-handler": "~1.8.0",
+    "react-native-reanimated": "~1.13.0",
+    "react-native-web": "~0.13.12",
     "react-navigation": "^4.0.4",
-    "react-navigation-stack": "latest",
-    "ts-jest": "^24.1.0"
+    "react-navigation-stack": "^2.10.4",
+    "ts-jest": "26.5.4"
   },
   "devDependencies": {
-    "@types/react": "^16.8.23",
-    "@types/react-native": "^0.57.65",
-    "babel-preset-expo": "^6.0.0",
-    "jest": "^24.9.0",
-    "typescript": "^3.4.5"
+    "@types/react": "~16.9.35",
+    "@types/react-native": "~0.63.2",
+    "babel-preset-expo": "8.3.0",
+    "jest": "26.6.3",
+    "typescript": "~4.0.0"
   },
   "private": true,
   "ApiUrl": "https://eurosportdigital.github.io/eurosport-react-native-developer-recruitment/docs/headtohead.json",
