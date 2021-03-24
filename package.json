@@ -12,22 +12,22 @@
   "dependencies": {
     "@types/jest": "26.0.21",
     "expo": "^40.0.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
-    "react-native-gesture-handler": "~1.8.0",
-    "react-native-reanimated": "~1.13.0",
-    "react-native-web": "~0.13.12",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "^0.64.0",
+    "react-native-gesture-handler": "1.10.3",
+    "react-native-reanimated": "2.0.0",
+    "react-native-web": "0.15.0",
     "react-navigation": "^4.0.4",
     "react-navigation-stack": "^2.10.4",
     "ts-jest": "26.5.4"
   },
   "devDependencies": {
-    "@types/react": "~16.9.35",
-    "@types/react-native": "~0.63.2",
+    "@types/react": "17.0.3",
+    "@types/react-native": "0.64.0",
     "babel-preset-expo": "8.3.0",
     "jest": "26.6.3",
-    "typescript": "~4.0.0"
+    "typescript": "4.2.3"
   },
   "private": true,
   "ApiUrl": "https://eurosportdigital.github.io/eurosport-react-native-developer-recruitment/docs/headtohead.json",
